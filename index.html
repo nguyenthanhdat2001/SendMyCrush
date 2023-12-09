@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send to my love</title>
+    <title>Gửi cho Thuý Anh</title>
     <link rel="stylesheet" href="sendmyscrush.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="heart.svg">
 </head>
+
 <body>
     <div id="filter">
         <div id="container">
@@ -19,101 +23,40 @@
             <div class="heart" style="--i:5"><img src="heart.svg" alt=""></div>
             <section class="content">
                 <div class="popup">
-                    <div class="info">
-                            <h3>Xin chào em anh là Đạt</h3>
-                            <p>Rất vui khi được làm quen <i class="far fa-smile-beam"></i></p>
-                            <p>Dưới đây là thông tin chi tiết về anh</p>
+                    <div class="info" style="margin-bottom: 10px; text-align: center;">
+                        <h3>Lại là anh đây</h3>
+                        <p>Thật là vui khi em đã dành thời gian vào sử dụng "phần mềm" của anh viết riêng cho em.</p>
+                        <p>Anh biết anh khong có cute, chưa được như em mong muốn. Nhưng anh vẫn ở đây, để làm hài lòng
+                            "khách hàng nhỏ" của anh. Hi vọng sau những lần anh cập nhật sẽ chiều lòng được nhỏ khách
+                            "khó tính" này 🤗</p>
                     </div>
-                    <ul class="sci">
-                        <li><a href="https://www.facebook.com/profile.php?id=100007124017818"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/nguyenthanhdat1010/"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.tiktok.com/@nguyenthanhdat243?lang=vi-VN"><i class="fab fa-tiktok"></i></a></li>
-                    </ul>
-                    <div class="btn ok">OK</div>
+                    <div class="btn ok">Oki anh ♥️</div>
                 </div>
                 <div class="main active">
-                    <div class="popupMain" id="popup-main">
-                        <input id="ip" type="text" placeholder="Nhập lí do bạn đồng ý mình đi">
-                        <input id="btn" type="submit" value="Gửi">
-                    </div>
-                    <div class="message-me">
-                        <p>Anh biết mà, vậy thì còn chờ gì nữa </p>
-                        <a href="https://www.facebook.com/profile.php?id=100007124017818" class="btn">Message me</a>
-                    </div>
-                    <div class="title">
-                        <h1>Hello my love</h1>
+                    <div class="title" style="padding: 10px; text-align: center;">
+                        <h1>Thuý Anh</h1>
                         <p class="auto-text"></p>
                     </div>
                     <div class="box-btn">
-                        <div id="count">Số lần thử là: 4</div>
-                        <div class="btn" id="yes">Yes</div>
-                        <div class="btn" id="no">No</div>
+                        <div id="count">Số lần thử là: 5</div>
+                        <div class="btn" id="yes">Cóó !</div>
+                        <div class="btn" id="no">Khumm !</div>
+                    </div>
+                    <div class="message-me">
+                        <p>Anh biết mà, vậy thì còn chờ gì nữa. Bỏ block anh điii 😚</p>
+                        <a href="https://www.facebook.com/profile.php?id=100007124017818" class="btn">Oki anh</a>
+                    </div>
+                    <div class="popupMain" id="popup-main">
+                        <input id="ip" type="text" placeholder="Vì sao em đồng ý vậy ^.^" autocomplete="off">
+                        <input id="btn" type="submit" value="Gửi">
                     </div>
                 </div>
             </section>
         </div>
     </div>
     <script>
-        let OK = document.querySelector('.ok');
-        let popUp = document.querySelector('.popup')
-        let main = document.querySelector('.main')
-
-
-        OK.addEventListener('click',() =>{
-            popUp.classList.add('active')
-            main.classList.remove('active')
-
-            let auto = document.querySelector('.auto-text')
-            let prog = "Làm bạn gái anh nhé <3"
-            let index = 0;
-            var time = setInterval(()=>{
-                auto.textContent = prog.slice(0 , index)
-                index++;
-                if(index > prog.length){
-                    clearInterval(time)
-            }
-            },200)
-        })
-
-        let yes = document.getElementById("yes")
-        let no = document.getElementById("no")
-        let count = document.getElementById("count")
-        let popupMain = document.getElementById("popup-main")
-        let dem = 4;
-
-        no.onclick = function(){     
-            no.classList.toggle('active')
-            dem--
-            count.textContent = "Số lần thử là: " + dem  
-            if(dem < 0){
-                count.textContent = "Hết lần thử rồi chọn đi =))"
-                count.style.color = "#fff";
-                no.innerHTML = "Yes"
-                no.classList.remove("active")
-            }
-            if(dem < -1){
-                popupMain.classList.add('active')
-            }
-        }
-
-        yes.addEventListener('click',()=>{
-            popupMain.classList.add('active')
-        })  
-
-        let ip = document.getElementById("ip");
-        let btn = document.getElementById("btn");
-        let text = "Tại vì anh quá đẹp trai";
-        let mess = document.querySelector('.message-me')
-
-        btn.onclick = function(){
-            ip.value = text
-            ip.style.pointerEvents = "none"
-            mess.classList.add('active')
-            setTimeout(()=>{
-                popupMain.classList.remove('active')
-            },2000)
-
-        }  
+        let OK = document.querySelector(".ok"), popUp = document.querySelector(".popup"), main = document.querySelector(".main"); OK.addEventListener("click", () => { popUp.classList.add("active"), main.classList.remove("active"); let e = document.querySelector(".auto-text"), t = "Anh th\xedch em ! Noel n\xe0y đi chơi với anh nha ♥️", n = 0; var i = setInterval(() => { e.textContent = t.slice(0, n), ++n > t.length && clearInterval(i) }, 200) }); let yes = document.getElementById("yes"), no = document.getElementById("no"), count = document.getElementById("count"), popupMain = document.getElementById("popup-main"), dem = 5; no.onclick = function () { no.classList.toggle("active"), dem--, count.textContent = "Số lần thử c\xf2n lại: " + dem, dem < 1 && (count.textContent = "Hết lần thử rồi chọn đi \uD83D\uDE02", count.style.color = "#fff", no.innerHTML = "Em đồng \xfd !", no.classList.remove("active")), dem < 0 && popupMain.classList.add("active") }, yes.addEventListener("click", () => { popupMain.classList.add("active") }); let ip = document.getElementById("ip"), btn = document.getElementById("btn"), text = "V\xec em cũng muốn đi chơii", mess = document.querySelector(".message-me"); btn.onclick = function () { ip.value = text, ip.style.pointerEvents = "none", mess.classList.add("active"), setTimeout(() => { popupMain.classList.remove("active") }, 2e3) };
     </script>
 </body>
+
 </html>

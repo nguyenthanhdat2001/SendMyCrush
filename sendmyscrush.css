@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Style Script', cursive;
 }
 
 body {
-  font-family: 'Style Script', cursive;
   font-size: 30px;
   color: #fff;
 }
@@ -21,7 +22,7 @@ img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .btn {
@@ -38,11 +39,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn:hover {
@@ -65,11 +66,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #FF9A8B;
   background-image: -webkit-gradient(linear, left top, right top, from(#FF9A8B), color-stop(55%, #FF6A88), to(#FF99AC));
   background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
@@ -78,9 +79,9 @@ img {
 #filter #container .heart {
   position: absolute;
   -webkit-animation: tym 3s linear infinite;
-          animation: tym 3s linear infinite;
+  animation: tym 3s linear infinite;
   -webkit-animation-delay: calc(-1s * var(--i));
-          animation-delay: calc(-1s * var(--i));
+  animation-delay: calc(-1s * var(--i));
 }
 
 #filter #container .heart:nth-child(1) {
@@ -119,24 +120,30 @@ img {
 }
 
 @-webkit-keyframes tym {
-  0%, 100% {
+
+  0%,
+  100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
+
   50% {
     -webkit-transform: translateY(40px);
-            transform: translateY(40px);
+    transform: translateY(40px);
   }
 }
 
 @keyframes tym {
-  0%, 100% {
+
+  0%,
+  100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
+
   50% {
     -webkit-transform: translateY(40px);
-            transform: translateY(40px);
+    transform: translateY(40px);
   }
 }
 
@@ -151,9 +158,10 @@ img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 10px;
   width: 400px;
+  padding: 20px;
   min-height: 300px;
   background-color: #ff99ac9f;
   border-radius: 15px;
@@ -163,14 +171,14 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: top 1s;
   transition: top 1s;
 }
@@ -184,15 +192,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #filter #container .content .popup .sci {
@@ -200,11 +208,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 20px 0;
 }
 
@@ -218,11 +226,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   color: #FF99AC;
@@ -247,14 +255,14 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -269,15 +277,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #filter #container .content .main .title h1 {
@@ -291,15 +299,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   row-gap: 20px;
   position: relative;
 }
@@ -316,7 +324,7 @@ img {
 
 #filter #container .content .main .box-btn #no.active {
   -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
 }
 
 #filter #container .content .main .box-btn #count {
@@ -337,7 +345,7 @@ img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
 }
 
 #filter #container .content .main .popupMain.active {
@@ -346,15 +354,15 @@ img {
   display: flex;
   bottom: 50%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #filter #container .content .main .popupMain #ip {
@@ -400,11 +408,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: none;
   outline: none;
   border-radius: 30px;
@@ -423,33 +431,34 @@ img {
 }
 
 #filter #container .content .main .message-me {
+  text-align: center;
   position: absolute;
   top: -50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.5);
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   z-index: 100;
   padding: 10px;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition-delay: 2.5s;
-          transition-delay: 2.5s;
+  transition-delay: 2.5s;
 }
 
 #filter #container .content .main .message-me.active {
@@ -458,6 +467,7 @@ img {
 
 #filter #container .content .main .message-me p {
   margin-bottom: 10px;
+  color: #FF6A88;
 }
 
 #filter #container .content .main .message-me a {
@@ -468,34 +478,39 @@ img {
   .heart {
     position: absolute;
     -webkit-animation: tym 3s linear infinite;
-            animation: tym 3s linear infinite;
+    animation: tym 3s linear infinite;
     -webkit-animation-delay: calc(-1s * var(--i));
-            animation-delay: calc(-1s * var(--i));
+    animation-delay: calc(-1s * var(--i));
   }
+
   .heart:nth-child(1) {
     top: 10px;
     left: 20px;
     width: 100px;
     height: 100px;
   }
+
   .heart:nth-child(2) {
     top: 60px;
     right: 50px;
     width: 80px;
     height: 80px;
   }
+
   .heart:nth-child(3) {
     bottom: 50px;
     right: 20px;
     width: 100px;
     height: 100px;
   }
+
   .heart:nth-child(4) {
     bottom: 50px;
     left: 50px;
     width: 90px;
     height: 90px;
   }
+
   .heart:nth-child(5) {
     top: 300px;
     left: 200px;
@@ -503,4 +518,5 @@ img {
     height: 50px;
   }
 }
+
 /*# sourceMappingURL=sendmyscrush.css.map */
